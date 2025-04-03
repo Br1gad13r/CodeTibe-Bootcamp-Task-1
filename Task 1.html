@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
 <body>
     <nav class="navbar">
-        <img id="page-logo" src="https://img.freepik.com/free-vector/red-logo-black-background_1195-52.jpg?t=st=1743572117~exp=1743575717~hmac=c5c60113fc819e809c8bfaa551a365fd6ce21d70d93d62405a60b5d1b0d828c1&w=740" height="50">
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contact Us</a></li>
+        <img id="logo" style="float: left;" src="https://img.freepik.com/free-vector/red-logo-black-background_1195-52.jpg?t=st=1743572117~exp=1743575717~hmac=c5c60113fc819e809c8bfaa551a365fd6ce21d70d93d62405a60b5d1b0d828c1&w=740" height="50">
+        
+        <ul class="menu" style="float: right;">
+            <li><a href="#navbar">Home</a></li>
+            <li><a href="#about-me-section">About me</a></li>
+            <li><a href="#">Contact Me</a></li>
         </ul>
     </nav>
-    <section id="image-section">
-        <img src="https://images.unsplash.com/photo-1741851373559-6879db14fd8a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image of houses" height="300" width="100%">
+
+    <main>
+    <section id="content">
+        <img class="content-img" src="https://images.unsplash.com/photo-1741851373559-6879db14fd8a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image of houses" height="300" width="100%">
     </section>
+
+    <h3>Sipho</h3>
+
     <section class="about-me-section">
-        <p class="name">
-            <strong>Sipho</strong>
-        </p>
+
         
         <p>
         I'm an aspiring software developer with a keen interest in cybersecurity. Passionate about creating innovative software solutions, and dedicated to honing coding skills while also exploring the intricacies of protecting digital information. With a strong desire to contribute to the tech industry, I'm committed to continuous learning and staying updated on the latest trends in both software development and cybersecurity. 
@@ -30,22 +35,38 @@
             <img id="my-image" src="https://images.unsplash.com/vector-1740768260426-d4b053c6e5a5?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="animated image" height="100px">
     </section>
 
+    <section class="gallery">
+        <img src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg" alt="image of a squirrel" height="250px">
+        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image of a white cat" height="250px">
+        <img src="https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image of a duck" height="250px">
+        <img src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blue lake between mountains" height="250px">
+        <img src="https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Green Hill" height="250px">
+        
+    </section>
+
+
+
+    </main>
+
     <footer>
-        <ul class="footer-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-        <iframe
-    width="600"
-    height="450"
-    style="border:0"
-    loading="lazy"
-    allowfullscreen
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-    &q=Space+Needle,Seattle+WA">
-</iframe>
+     <form class="contact-form">
+
+        <h2>Contact Me</h2>
+
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="type your name here" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="eg. example@email.com" required>
+
+
+        <input type="submit" value="Submit">
+
+
+
+
+        </form>
+
 
     </footer>
     
